@@ -1,0 +1,5 @@
+D:\WF C#\Test\QL_CTChamsockhachhang\DAL\obj\Debug\net5.0\DAL.csproj.AssemblyReference.cache
+D:\WF C#\Test\QL_CTChamsockhachhang\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\WF C#\Test\QL_CTChamsockhachhang\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
+D:\WF C#\Test\QL_CTChamsockhachhang\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
+D:\WF C#\Test\QL_CTChamsockhachhang\DAL\obj\Debug\net5.0\DAL.csproj.CoreCompileInputs.cache

@@ -1,0 +1,15 @@
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\bin\Debug\net6.0\BLL.deps.json
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\bin\Debug\net6.0\BLL.dll
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\bin\Debug\net6.0\BLL.pdb
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\bin\Debug\net6.0\DAL.dll
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\bin\Debug\net6.0\DAL.pdb
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\BLL.dll
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\refint\BLL.dll
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\BLL.pdb
+D:\WF C#\Test\QL_CTChamsockhachhang\BLL\obj\Debug\net6.0\ref\BLL.dll
