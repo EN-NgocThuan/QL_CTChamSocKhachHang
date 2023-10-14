@@ -91,5 +91,28 @@ namespace GUI
                 MessageBox.Show("Xoá khách hàng thất bại");
             }
         }
+
+        private void btnfind_Click(object sender, EventArgs e)
+        {
+            if(txtFind.Text.Length > 0)
+            {
+                if(dal.Findmember(txtFind.Text)!=null)
+                {
+                    KhachHang kh = dal.Findmember(txtFind.Text);
+                    txtMakh.Text = kh.makh;
+                    txtTenkh.Text = kh.tenkh;   
+                    txtDiachi.Text = kh.diachi;
+                    txtSodienthoai.Text = kh.sdt;
+                }
+                else
+                {
+                    MessageBox.Show("Khách hàng không tồn tại");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chưa nhập dữ liệu");
+            }
+        }
     }
 }

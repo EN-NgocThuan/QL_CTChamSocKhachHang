@@ -44,6 +44,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtMakh = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnfind = new System.Windows.Forms.Button();
+            this.txtFind = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Khachhang)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -201,16 +203,37 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã khách hàng : ";
             // 
+            // btnfind
+            // 
+            this.btnfind.Location = new System.Drawing.Point(878, 47);
+            this.btnfind.Name = "btnfind";
+            this.btnfind.Size = new System.Drawing.Size(75, 23);
+            this.btnfind.TabIndex = 3;
+            this.btnfind.Text = "Tìm kiếm";
+            this.btnfind.UseVisualStyleBackColor = true;
+            this.btnfind.Click += new System.EventHandler(this.btnfind_Click);
+            // 
+            // txtFind
+            // 
+            this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFind.Location = new System.Drawing.Point(623, 44);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(249, 26);
+            this.txtFind.TabIndex = 4;
+            // 
             // GUI_KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 586);
+            this.Controls.Add(this.txtFind);
+            this.Controls.Add(this.btnfind);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_Khachhang);
             this.Name = "GUI_KhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GUI_KhachHang";
             this.Load += new System.EventHandler(this.GUI_KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Khachhang)).EndInit();
@@ -239,5 +262,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnfind;
+        private System.Windows.Forms.TextBox txtFind;
     }
 }

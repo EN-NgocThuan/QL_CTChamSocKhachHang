@@ -125,6 +125,15 @@ namespace GUI
             }
             catch { return false; }
         }
+
+        //Tìm kiếm 
+        public KhachHang Findmember(string key)
+        {
+            KhachHang kh = new KhachHang();
+            List<KhachHang> lst = collection.AsQueryable<KhachHang>().ToList();
+            kh = lst.Where(r => r.makh == key).FirstOrDefault();
+            return kh;
+        }
     }
     public class KhachHang
     {
