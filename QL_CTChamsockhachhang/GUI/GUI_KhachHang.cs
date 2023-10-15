@@ -31,6 +31,15 @@ namespace GUI
                 txtTenkh.Text = dgv_Khachhang.CurrentRow.Cells[1].Value.ToString();
                 txtDiachi.Text = dgv_Khachhang.CurrentRow.Cells[2].Value.ToString();
                 txtSodienthoai.Text = dgv_Khachhang.CurrentRow.Cells[3].Value.ToString();
+                if(dal.GetDanhGias(dgv_Khachhang.CurrentRow.Cells[0].Value.ToString()) != null)
+                {
+                    lbSLDanhgia.Text = dal.GetDanhGias(dgv_Khachhang.CurrentRow.Cells[0].Value.ToString()).Count.ToString();
+                }
+                else
+                {
+                    lbSLDanhgia.Text = "0";
+                }
+                
             }
             catch {
                 return;
@@ -113,6 +122,12 @@ namespace GUI
             {
                 MessageBox.Show("Chưa nhập dữ liệu");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GUI_DanhGia fr = new GUI_DanhGia(txtMakh.Text);
+            fr.Show();
         }
     }
 }

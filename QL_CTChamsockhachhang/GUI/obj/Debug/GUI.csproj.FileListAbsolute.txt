@@ -288,3 +288,4 @@ C:\Users\Admin\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Q
 C:\Users\Admin\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\QL_CTChamSocKhachHang\QL_CTChamsockhachhang\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Admin\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\QL_CTChamSocKhachHang\QL_CTChamsockhachhang\GUI\obj\Debug\GUI.exe
 C:\Users\Admin\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\QL_CTChamSocKhachHang\QL_CTChamsockhachhang\GUI\obj\Debug\GUI.pdb
+C:\Users\Admin\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\QL_CTChamSocKhachHang\QL_CTChamsockhachhang\GUI\obj\Debug\GUI.GUI_DanhGia.resources

@@ -134,6 +134,58 @@ namespace GUI
             kh = lst.Where(r => r.makh == key).FirstOrDefault();
             return kh;
         }
+        //===================================================================
+        //Lấy danh sách đánh giá của một khách hàng
+        public List<DanhGia> GetDanhGias(string makh)
+        {
+            List<KhachHang> lst = collection.AsQueryable<KhachHang>().ToList();
+            List<DanhGia> lstdanhGias = new List<DanhGia>();
+            if(lst.Where(r=>r.makh == makh).FirstOrDefault() != null)
+            {
+                lstdanhGias = lst.Where(r => r.makh == makh).Select(r => r.danhgia).FirstOrDefault();
+                return lstdanhGias;
+            }
+            else
+            {
+                return null;
+            }
+            
+        }
+        //Lấy danh sách đánh giá của tất cả khách hàng
+        public List<DanhGia> GetAllDanhGias()
+        {
+            List<DanhGia> all = new List<DanhGia>();
+            List<KhachHang> kh = collection.AsQueryable<KhachHang>().ToList();
+            foreach(var k in kh)
+            {
+                if (k.danhgia != null)
+                {
+                    foreach(var i in k.danhgia)
+                    {
+                        all.Add(i);
+                    }
+                }
+            }
+            return all;
+        }
+        //Lọc danh sách đánh giá theo loại
+        public List<DanhGia> GetDanhGiasbyType(string type,string makh)
+        {
+            if(type == "All" || type == "")
+            {
+                return GetDanhGias(makh);
+            }
+            else
+            {
+                List<DanhGia> lst = GetDanhGias(makh);
+                return lst.Where(r => r.loaidg == type).Select(r => r).ToList();
+            }
+        }
+
+        //==================================================================================
+        //Thêm - Xoá sửa đánh giá
+        //==================================================================================
+
     }
     public class KhachHang
     {

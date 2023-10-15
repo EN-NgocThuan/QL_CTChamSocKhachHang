@@ -104,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectionKhachHang.cs" />
+    <Compile Include="GUI_DanhGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_DanhGia.Designer.cs">
+      <DependentUpon>GUI_DanhGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI_DanhGia.resx">
+      <DependentUpon>GUI_DanhGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_KhachHang.resx">
       <DependentUpon>GUI_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
