@@ -185,7 +185,53 @@ namespace GUI
         //==================================================================================
         //Thêm - Xoá sửa đánh giá
         //==================================================================================
+        public bool AddDanhgia(DanhGia dg,string makh)
+        {
+            
+            try
+            {
+                var filter = Builders<KhachHang>.Filter.Eq(r => r.makh, makh);
+                var update = Builders<KhachHang>.Update
+                    .AddToSet(r => r.danhgia,dg);
+                collection.UpdateOneAsync(filter, update);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool delDanhgia(DanhGia dg,string makh)
+        {
+            try
+            {
+                var update = Builders<KhachHang>.Update.PullFilter(p => p.danhgia, f => f.masp == dg.masp && f.tensp == dg.tensp);
+                collection.FindOneAndUpdateAsync(p=>p.makh==makh, update);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            
 
+        }
+        public bool editDanhgia(DanhGia dg, string makh)
+        {
+
+            try
+            {
+                var filter = Builders<KhachHang>.Filter.Eq(r => r.makh, makh) & Builders<KhachHang>.Filter.Eq("danhgia.masp",dg.masp);
+                var update = Builders<KhachHang>.Update.Set("danhgia.$.loaidg", dg.loaidg).Set("danhgia.$.danhgiasp", dg.danhgiasp).Set("danhgia.$.tt", dg.tt);
+                collection.UpdateOneAsync(filter,update);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Loi : "+ex);
+                return false;
+            }
+        }
     }
     public class KhachHang
     {

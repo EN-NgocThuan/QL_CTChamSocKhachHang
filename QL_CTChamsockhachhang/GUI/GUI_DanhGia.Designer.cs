@@ -34,6 +34,9 @@
             this.cbLoaiDanhGia = new System.Windows.Forms.ComboBox();
             this.dgvDanhGia = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.rBNoresponse = new System.Windows.Forms.RadioButton();
+            this.rBResponded = new System.Windows.Forms.RadioButton();
             this.btnFind = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
@@ -48,9 +51,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.rBResponded = new System.Windows.Forms.RadioButton();
-            this.rBNoresponse = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhGia)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -125,6 +125,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đánh giá";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.rBNoresponse);
+            this.panel2.Controls.Add(this.rBResponded);
+            this.panel2.Location = new System.Drawing.Point(114, 328);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(241, 86);
+            this.panel2.TabIndex = 8;
+            // 
+            // rBNoresponse
+            // 
+            this.rBNoresponse.AutoSize = true;
+            this.rBNoresponse.Location = new System.Drawing.Point(28, 55);
+            this.rBNoresponse.Name = "rBNoresponse";
+            this.rBNoresponse.Size = new System.Drawing.Size(94, 17);
+            this.rBNoresponse.TabIndex = 0;
+            this.rBNoresponse.TabStop = true;
+            this.rBNoresponse.Text = "Chưa phản hồi";
+            this.rBNoresponse.UseVisualStyleBackColor = true;
+            // 
+            // rBResponded
+            // 
+            this.rBResponded.AutoSize = true;
+            this.rBResponded.Location = new System.Drawing.Point(28, 15);
+            this.rBResponded.Name = "rBResponded";
+            this.rBResponded.Size = new System.Drawing.Size(83, 17);
+            this.rBResponded.TabIndex = 0;
+            this.rBResponded.TabStop = true;
+            this.rBResponded.Text = "Đã phản hồi";
+            this.rBResponded.UseVisualStyleBackColor = true;
+            // 
             // btnFind
             // 
             this.btnFind.Location = new System.Drawing.Point(336, 420);
@@ -142,6 +173,7 @@
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDel
             // 
@@ -151,6 +183,7 @@
             this.btnDel.TabIndex = 7;
             this.btnDel.Text = "Xoá";
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnAdd
             // 
@@ -160,6 +193,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label7
             // 
@@ -249,37 +283,6 @@
             this.label3.Size = new System.Drawing.Size(77, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã sản phẩm :";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.rBNoresponse);
-            this.panel2.Controls.Add(this.rBResponded);
-            this.panel2.Location = new System.Drawing.Point(114, 328);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(241, 86);
-            this.panel2.TabIndex = 8;
-            // 
-            // rBResponded
-            // 
-            this.rBResponded.AutoSize = true;
-            this.rBResponded.Location = new System.Drawing.Point(28, 15);
-            this.rBResponded.Name = "rBResponded";
-            this.rBResponded.Size = new System.Drawing.Size(83, 17);
-            this.rBResponded.TabIndex = 0;
-            this.rBResponded.TabStop = true;
-            this.rBResponded.Text = "Đã phản hồi";
-            this.rBResponded.UseVisualStyleBackColor = true;
-            // 
-            // rBNoresponse
-            // 
-            this.rBNoresponse.AutoSize = true;
-            this.rBNoresponse.Location = new System.Drawing.Point(28, 55);
-            this.rBNoresponse.Name = "rBNoresponse";
-            this.rBNoresponse.Size = new System.Drawing.Size(94, 17);
-            this.rBNoresponse.TabIndex = 0;
-            this.rBNoresponse.TabStop = true;
-            this.rBNoresponse.Text = "Chưa phản hồi";
-            this.rBNoresponse.UseVisualStyleBackColor = true;
             // 
             // GUI_DanhGia
             // 
